@@ -403,18 +403,18 @@
     
     self.bottomScroll.frame = frame;
     
-    NSLog(@"%.4f", rate);
+//    NSLog(@"%.4f", rate);
     // 向后移动
     double nextPage = (int)ceil(rate);
     
     double downPage = (int)rate;
     
-    NSLog(@"当前页:%f --- 下一页:%f", downPage ,nextPage);
+//    NSLog(@"当前页:%f --- 下一页:%f", downPage ,nextPage);
     float temp = 1.0 * self.oldIndex;
     
     self.oldIndex = self.oldIndex <= nextPage? nextPage: downPage;
     
-        NSLog(@"当前页:%d", self.oldIndex);
+//        NSLog(@"当前页:%d", self.oldIndex);
     
     if (nextPage == downPage) {
         
@@ -492,12 +492,7 @@
 
     // 向前移动
     if (nextPage == self.oldIndex) {
-        
-        NSLog(@"向前移动");
-//        if (self.oldIndex ) {
-//            <#statements#>
-//        }
-        
+                
         CGFloat changeValue = rate - self.oldIndex * 1.0;
          //NSLog(@"%.2f", changeValue);
         CGFloat test = 1;
@@ -514,9 +509,6 @@
         colorLayer.locations  = @[@(test), @(test + 0.000001)];
         
         CAGradientLayer *colorLayer = [self.allColorLayerArr objectAtIndex:self.oldIndex];
-        //colorLayer.frame = itemView.frame;
-//        [CATransaction setDisableActions:YES];
-        
         // 颜色分配
         colorLayer.colors = @[(__bridge id)[UIColor redColor].CGColor,
                               (__bridge id)[UIColor greenColor].CGColor];
@@ -535,7 +527,7 @@
     } else {
         // 向后移动
         
-        NSLog(@"向后移动");
+       // NSLog(@"向后移动");
         
         CGFloat changeValue = rate - self.oldIndex * 1.0;
         // NSLog(@"%.2f", changeValue);
@@ -555,9 +547,6 @@
         colorLayer.startPoint = CGPointMake(0, 0);
         // 结束点
         colorLayer.endPoint = CGPointMake(1, 0);
-        
-        //        CGFloat test1 = 0;
-        //        test1 = test1 + changeValue;
         colorLayer.locations  = @[@(test), @(test + 0.000001)];
         
     }
@@ -572,5 +561,12 @@
  // Drawing code
  }
  */
-
+/*
+ 
+ 作者: 崔嵬
+ Q Q: 525643907
+ 邮箱: cuiwei_0408@163.com
+ 注: 欢迎互相学习与交流.
+ 
+ */
 @end

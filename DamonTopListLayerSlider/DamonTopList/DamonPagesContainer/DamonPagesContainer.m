@@ -212,7 +212,7 @@
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
     //self.scrollView.userInteractionEnabled = YES;
-    NSLog(@"停止拖拽");
+//    NSLog(@"停止拖拽");
 }
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
@@ -232,7 +232,7 @@
    /// [self.topScrollView setButtonSelectStyle:index];
     // 这个是可以使其页面响应点击状态栏可以置顶的方法
     [self setCurrentScrollTotopView];
-    NSLog(@"结束减速");
+//    NSLog(@"结束减速");
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
@@ -259,5 +259,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+/*
+ 
+ 作者: 崔嵬
+ Q Q: 525643907
+ 邮箱: cuiwei_0408@163.com
+ 注: 欢迎互相学习与交流.
+ 
+ */
 
 @end
